@@ -45,20 +45,20 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "navya.ch@example.com",
-      href: "mailto:navya.ch@example.com"
+      value: "navya14112003@gmail.com",
+      href: "mailto:navya14112003@gmail.com"
     },
     {
       icon: <Github className="w-5 h-5" />,
       label: "GitHub",
-      value: "github.com/navyach",
-      href: "https://github.com/navyach"
+      value: "github.com/chennakesavulanavya",
+      href: "https://github.com/chennakesavulanavya"
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/navyach",
-      href: "https://linkedin.com/in/navyach"
+      value: "linkedin.com/in/navya-141103nav",
+      href: "https://www.linkedin.com/in/navya-141103nav/"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
@@ -189,9 +189,9 @@ const Contact = () => {
                 <h4 className="text-lg font-semibold text-white mb-4">Follow me</h4>
                 <div className="flex gap-4">
                   {[
-                    { icon: <Github size={20} />, href: "https://github.com/navyach", label: "GitHub" },
-                    { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/navyach", label: "LinkedIn" },
-                    { icon: <Mail size={20} />, href: "mailto:navya.ch@example.com", label: "Email" }
+                    { icon: <Github size={20} />, href: "https://github.com/chennakesavulanavya", label: "GitHub" },
+                    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/navya-141103nav/", label: "LinkedIn" },
+                    { icon: <Mail size={20} />, href: "mailto:navya14112003@gmail.com", label: "Email" }
                   ].map((social, index) => (
                     <a
                       key={index}

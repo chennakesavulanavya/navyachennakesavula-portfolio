@@ -25,9 +25,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github size={20} />, href: "https://github.com/navyach", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/navyach", label: "LinkedIn" },
-    { icon: <Mail size={20} />, href: "mailto:navya.ch@example.com", label: "Email" }
+    { icon: <Github size={20} />, href: "https://github.com/chennakesavulanavya", label: "GitHub" },
+    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/navya-141103nav/", label: "LinkedIn" },
+    { icon: <Mail size={20} />, href: "mailto:navya14112003@gmail.com", label: "Email" }
   ];
 
   return (
@@ -90,10 +90,10 @@ const Footer = () => {
             <div className="space-y-2 text-gray-400">
               <p>Ready to start your next project?</p>
               <a 
-                href="mailto:navya.ch@example.com"
+                href="mailto:navya14112003@gmail.com"
                 className="text-cyan-400 hover:text-cyan-300 transition-colors"
               >
-                navya.ch@example.com
+                navya14112003@gmail.com
               </a>
             </div>
             <div className="pt-4">

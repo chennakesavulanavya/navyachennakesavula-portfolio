@@ -126,28 +126,6 @@ const Skills = () => {
               );
             })}
           </div>
-
-          {/* Additional Skills Grid */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-bold text-center mb-8 text-white">
-              Additional Technologies
-            </h3>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                'TypeScript', 'Express.js', 'REST APIs', 'GraphQL', 'Docker', 
-                'AWS', 'Firebase', 'Tailwind CSS', 'Bootstrap', 'Sass'
-              ].map((tech, index) => (
-                <div 
-                  key={tech}
-                  className="px-4 py-2 bg-gradient-to-r from-gray-700 to-gray-800 border border-gray-600 rounded-full text-gray-300 hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300 transform hover:scale-105"
-                  style={{ animationDelay: `${index * 0.05}s` }}
-                >
-                  {tech}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
