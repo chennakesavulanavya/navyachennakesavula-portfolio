@@ -10,8 +10,7 @@ const Skills = () => {
       skills: [
         { name: "HTML5", level: 95 },
         { name: "CSS3", level: 90 },
-        { name: "JavaScript", level: 88 },
-        { name: "React", level: 85 }
+        { name: "JavaScript", level: 88 }
       ],
       color: "cyan"
     },
@@ -19,7 +18,6 @@ const Skills = () => {
       title: "Backend", 
       icon: <Database className="w-6 h-6" />,
       skills: [
-        { name: "Node.js", level: 80 },
         { name: "Python", level: 85 },
         { name: "SQL", level: 90 },
         { name: "MongoDB", level: 75 }
@@ -32,8 +30,7 @@ const Skills = () => {
       skills: [
         { name: "Git", level: 88 },
         { name: "GitHub", level: 90 },
-        { name: "VS Code", level: 95 },
-        { name: "Postman", level: 82 }
+        { name: "VS Code", level: 95 }
       ],
       color: "pink"
     }
