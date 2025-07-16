@@ -7,8 +7,8 @@ const Projects = () => {
     {
       id: 1,
       title: "AnuSri Interiors",
-      description: "Designed and developed a fully responsive and modern website using HTML, CSS, and JavaScript for an interior design business. The site includes dynamic service sections, contact form functionality, and mobile-friendly design to enhance user experience and brand presence.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+      description: "Designed and developed a responsive website for AnuSri Interiors using HTML, CSS, and JavaScript to showcase interior design services and gallery.",
+      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=500&h=300&fit=crop",
       technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://anusriinteriors.netlify.app/",
       githubUrl: "https://github.com/chennakesavulanavya/AnuSri-Interiors",
@@ -16,13 +16,13 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates and team collaboration features.",
+      title: "Student_Marks_Project",
+      description: "Developed a Python-based student marks management system with file handling",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["React", "Firebase", "CSS3", "JavaScript"],
+      technologies: ["Python", "File Handling"],
       liveUrl: "#",
-      githubUrl: "#",
-      category: "Frontend"
+      githubUrl: "https://github.com/chennakesavulanavya/Student_Marks",
+      category: "Python"
     },
     {
       id: 3,
