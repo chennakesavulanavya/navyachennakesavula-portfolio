@@ -6,13 +6,13 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with user authentication, product management, and payment integration.",
+      title: "AnuSri Interiors",
+      description: "Designed and developed a fully responsive and modern website using HTML, CSS, and JavaScript for an interior design business. The site includes dynamic service sections, contact form functionality, and mobile-friendly design to enhance user experience and brand presence.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Full Stack"
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "https://anusriinteriors.netlify.app/",
+      githubUrl: "https://github.com/chennakesavulanavya/AnuSri-Interiors",
+      category: "Web Development"
     },
     {
       id: 2,
