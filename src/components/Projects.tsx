@@ -18,7 +18,7 @@ const Projects = () => {
       id: 2,
       title: "Student_Marks_Project",
       description: "Developed a Python-based student marks management system with file handling",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
       technologies: ["Python", "File Handling"],
       liveUrl: "#",
       githubUrl: "https://github.com/chennakesavulanavya/Student_Marks",
@@ -26,16 +26,6 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts and interactive data visualization.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["JavaScript", "API Integration", "Chart.js", "CSS3"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Frontend"
-    },
-    {
-      id: 4,
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
@@ -43,26 +33,6 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "#",
       category: "Frontend"
-    },
-    {
-      id: 5,
-      title: "Data Analytics Dashboard",
-      description: "A Python-based dashboard for data visualization and analysis with interactive charts and filters.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
-      technologies: ["Python", "Flask", "SQL", "D3.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Backend"
-    },
-    {
-      id: 6,
-      title: "Chat Application",
-      description: "Real-time chat application with user authentication, private messaging, and group chat features.",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=300&fit=crop",
-      technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "Full Stack"
     }
   ];
 
