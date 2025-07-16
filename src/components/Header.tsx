@@ -52,10 +52,14 @@ const Header = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
-            <button className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2">
+            <a 
+              href="/Navya_Ch_Resume.pdf" 
+              download="Navya_Ch_Resume.pdf"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2"
+            >
               <Download size={16} />
               Resume
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,10 +84,14 @@ const Header = () => {
                   {item.name}
                 </button>
               ))}
-              <button className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2 w-fit">
+              <a 
+                href="/Navya_Ch_Resume.pdf" 
+                download="Navya_Ch_Resume.pdf"
+                className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2 w-fit"
+              >
                 <Download size={16} />
                 Resume
-              </button>
+              </a>
             </div>
           </div>
         )}
