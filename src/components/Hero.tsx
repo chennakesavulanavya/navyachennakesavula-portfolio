@@ -29,7 +29,7 @@ const Hero = () => {
 
           {/* Main Content */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
-            Navya Ch
+            Navya Chennakesavula
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Heart, Github, Linkedin, Mail, ChevronUp } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -45,8 +46,11 @@ const Footer = () => {
           
           {/* Brand Section */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Navya Ch
+            <div className="flex items-center gap-3">
+              <Logo size="md" />
+              <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                Navya Chennakesavula
+              </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Full Stack Developer passionate about creating innovative digital experiences 
@@ -111,7 +115,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <div className="text-gray-400 text-sm">
-              © {currentYear} Navya Ch. All rights reserved.
+              © {currentYear} Navya Chennakesavula. All rights reserved.
             </div>
           </div>
         </div>

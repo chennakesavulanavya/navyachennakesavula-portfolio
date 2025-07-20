@@ -45,7 +45,7 @@ const About = () => {
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Hi! I'm <span className="text-cyan-400 font-semibold">Navya Ch</span>, a passionate Full Stack Developer 
+                Hi! I'm <span className="text-cyan-400 font-semibold">Navya Chennakesavula</span>, a passionate Full Stack Developer 
                 with a strong foundation in modern web technologies. I love creating digital experiences that are both 
                 functional and beautiful.
               </p>
