@@ -1,12 +1,16 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { ExternalLink, Github, Code, Database, Palette } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
 
 const Projects = () => {
+  const [showDialog, setShowDialog] = useState(false);
+
   const projects = [
     {
       id: 1,
-      title: "AnuSri Interiors",
+      title: ["AnuSri", "Interiors"],
       description: "Designed and developed a responsive website for AnuSri Interiors using HTML, CSS, and JavaScript to showcase interior design services and gallery.",
       image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=500&h=300&fit=crop",
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -16,7 +20,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Student_Marks_Project",
+      title: ["Student Marks", "Project"],
       description: "Developed a Python-based student marks management system with file handling",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
       technologies: ["Python", "File Handling"],
@@ -26,7 +30,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Portfolio Website",
+      title: ["Portfolio", "Website"],
       description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
       technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
@@ -35,6 +39,13 @@ const Projects = () => {
       category: "Frontend"
     }
   ];
+
+  const handleLiveDemoClick = (e: React.MouseEvent, project: any) => {
+    if (project.id === 2) { // Student Marks Project
+      e.preventDefault();
+      setShowDialog(true);
+    }
+  };
 
   return (
     <section id="projects" className="py-20 bg-gray-900 relative overflow-hidden">
@@ -63,15 +74,16 @@ const Projects = () => {
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
-                    alt={project.title}
+                    alt={Array.isArray(project.title) ? project.title.join(' ') : project.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
-                  {/* Overlay Buttons */}
+                   {/* Overlay Buttons */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a 
                       href={project.liveUrl}
+                      onClick={(e) => handleLiveDemoClick(e, project)}
                       className="p-3 bg-cyan-500 text-white rounded-full hover:bg-cyan-600 transition-colors transform hover:scale-110"
                     >
                       <ExternalLink size={18} />
@@ -89,7 +101,13 @@ const Projects = () => {
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
                     <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
-                      {project.title}
+                      {Array.isArray(project.title) ? (
+                        <>
+                          {project.title[0]}<br />{project.title[1]}
+                        </>
+                      ) : (
+                        project.title
+                      )}
                     </h3>
                     <span className="px-2 py-1 bg-purple-600/20 border border-purple-500/30 rounded text-purple-400 text-xs">
                       {project.category}
@@ -116,6 +134,7 @@ const Projects = () => {
                   <div className="flex gap-3">
                     <a 
                       href={project.liveUrl}
+                      onClick={(e) => handleLiveDemoClick(e, project)}
                       className="flex-1 px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white text-sm rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 text-center"
                     >
                       Live Demo
@@ -133,6 +152,23 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
+      <Dialog open={showDialog} onOpenChange={setShowDialog}>
+        <DialogContent className="bg-gray-800 border-gray-700">
+          <DialogHeader>
+            <DialogTitle className="text-white">No Live Demo Available</DialogTitle>
+            <DialogDescription className="text-gray-400">
+              Student Marks Project has no live demo available
+            </DialogDescription>
+          </DialogHeader>
+          <Button 
+            onClick={() => setShowDialog(false)}
+            className="bg-cyan-500 hover:bg-cyan-600 text-white"
+          >
+            Close
+          </Button>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
