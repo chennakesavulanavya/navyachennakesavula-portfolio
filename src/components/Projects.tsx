@@ -37,6 +37,16 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "https://github.com/chennakesavulanavya/navyachennakesavula-portfolio",
       category: "Frontend"
+    },
+    {
+      id: 4,
+      title: ["Task", "Master"],
+      description: "A comprehensive task management application for organizing and tracking daily activities and projects.",
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+      technologies: ["React", "JavaScript", "CSS"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/chennakesavulanavya/TaskMaster",
+      category: "Web Application"
     }
   ];
 
