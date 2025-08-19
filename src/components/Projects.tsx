@@ -35,7 +35,7 @@ const Projects = () => {
       description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
       technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-      liveUrl: "#",
+      liveUrl: "https://navyachportfolio.netlify.app/",
       githubUrl: "https://github.com/chennakesavulanavya/navyachennakesavula-portfolio",
       category: "Frontend"
     },
