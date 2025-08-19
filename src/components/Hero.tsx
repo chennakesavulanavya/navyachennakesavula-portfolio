@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
-          <div className="mb-8 relative pt-8">
+          <div className="mb-8 relative pt-16 sm:pt-12 md:pt-8">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 shadow-2xl shadow-cyan-500/25 relative">
               <div className="w-full h-full bg-gradient-to-br from-cyan-500/20 to-purple-600/20 flex items-center justify-center">
                 <div className="text-6xl font-bold text-cyan-400">NC</div>
