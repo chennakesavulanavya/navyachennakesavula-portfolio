@@ -39,7 +39,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0 flex-1 mr-4">
             <Logo size="md" className="flex-shrink-0" />
-            <div className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent truncate">
+            <div className="text-sm sm:text-lg md:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
               Navya Chennakesavula
             </div>
           </div>
@@ -57,8 +57,8 @@ const Header = () => {
               </button>
             ))}
               <a 
-                href="/Navya_resume.pdf" 
-                download="Navya_resume.pdf"
+                href="/Navya_Chennakesavula_Resume.pdf" 
+                download="Navya_Chennakesavula_Resume.pdf"
               className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2"
             >
               <Download size={16} />
@@ -89,8 +89,8 @@ const Header = () => {
                 </button>
               ))}
                 <a 
-                  href="/Navya_resume.pdf" 
-                  download="Navya_resume.pdf"
+                  href="/Navya_Chennakesavula_Resume.pdf" 
+                  download="Navya_Chennakesavula_Resume.pdf"
                 className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2 w-fit"
               >
                 <Download size={16} />
