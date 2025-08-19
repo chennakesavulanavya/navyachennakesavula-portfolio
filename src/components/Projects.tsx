@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const [showDialog, setShowDialog] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<string>('');
 
   const projects = [
     {
@@ -51,8 +52,10 @@ const Projects = () => {
   ];
 
   const handleLiveDemoClick = (e: React.MouseEvent, project: any) => {
-    if (project.id === 2) { // Student Marks Project
+    if (project.liveUrl === '#') {
       e.preventDefault();
+      const projectName = Array.isArray(project.title) ? project.title.join(' ') : project.title;
+      setSelectedProject(projectName);
       setShowDialog(true);
     }
   };
@@ -168,7 +171,7 @@ const Projects = () => {
           <DialogHeader>
             <DialogTitle className="text-white">No Live Demo Available</DialogTitle>
             <DialogDescription className="text-gray-400">
-              Student Marks Project has no live demo available
+              {selectedProject} has no live demo available
             </DialogDescription>
           </DialogHeader>
           <Button 
