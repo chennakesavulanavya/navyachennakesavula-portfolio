@@ -35,11 +35,11 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-gray-900/95 backdrop-blur-sm border-b border-cyan-500/20' : 'bg-transparent'
     }`}>
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Logo size="md" />
-            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          <div className="flex items-center gap-2 min-w-0 flex-1 mr-4">
+            <Logo size="md" className="flex-shrink-0" />
+            <div className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent truncate">
               Navya Chennakesavula
             </div>
           </div>
