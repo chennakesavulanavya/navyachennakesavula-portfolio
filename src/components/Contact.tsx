@@ -98,18 +98,18 @@ const Contact = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent leading-tight">
               Let's Work Together
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">
               Have a project in mind? I'd love to hear from you. Let's create something amazing together.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Send me a message</h3>
+            <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-4 sm:p-6 lg:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-6">Send me a message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -170,9 +170,9 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Get in touch</h3>
-                <p className="text-gray-400 leading-relaxed mb-8">
+              <div className="px-4 sm:px-0">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-6">Get in touch</h3>
+                <p className="text-sm sm:text-base text-gray-400 leading-relaxed mb-8">
                   I'm always open to discussing new opportunities, creative projects, 
                   or potential collaborations. Don't hesitate to reach out!
                 </p>
@@ -182,25 +182,25 @@ const Contact = () => {
                 {contactInfo.map((item, index) => (
                   <div 
                     key={index}
-                    className="flex items-center p-4 bg-gray-800/30 border border-gray-700 rounded-lg hover:border-cyan-500/50 transition-all duration-300"
+                    className="flex items-start p-3 sm:p-4 bg-gray-800/30 border border-gray-700 rounded-lg hover:border-cyan-500/50 transition-all duration-300 mx-4 sm:mx-0"
                   >
-                    <div className="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-lg text-cyan-400 mr-4">
+                    <div className="p-2 sm:p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-lg text-cyan-400 mr-3 sm:mr-4 flex-shrink-0">
                       {item.icon}
                     </div>
-                    <div className="flex-1">
-                      <div className="text-gray-400 text-sm">{item.label}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-gray-400 text-xs sm:text-sm mb-1">{item.label}</div>
                       {item.href ? (
                         <a 
                           href={item.href}
-                          className="text-white hover:text-cyan-400 transition-colors flex items-center gap-1"
+                          className="text-white hover:text-cyan-400 transition-colors flex items-start gap-1 text-sm sm:text-base break-all"
                           target={item.href.startsWith('http') ? '_blank' : undefined}
                           rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                         >
-                          {item.value}
-                          {item.href.startsWith('http') && <ExternalLink size={14} />}
+                          <span className="break-all">{item.value}</span>
+                          {item.href.startsWith('http') && <ExternalLink size={12} className="flex-shrink-0 mt-0.5" />}
                         </a>
                       ) : (
-                        <div className="text-white">{item.value}</div>
+                        <div className="text-white text-sm sm:text-base">{item.value}</div>
                       )}
                     </div>
                   </div>
@@ -208,8 +208,8 @@ const Contact = () => {
               </div>
 
               {/* Social Links */}
-              <div className="pt-8">
-                <h4 className="text-lg font-semibold text-white mb-4">Follow me</h4>
+              <div className="pt-8 px-4 sm:px-0">
+                <h4 className="text-base sm:text-lg font-semibold text-white mb-4">Follow me</h4>
                 <div className="flex gap-4">
                   {[
                     { icon: <Github size={20} />, href: "https://github.com/chennakesavulanavya", label: "GitHub" },
