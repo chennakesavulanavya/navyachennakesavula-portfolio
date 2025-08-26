@@ -45,7 +45,7 @@ const Projects = () => {
       description: "A comprehensive task management application for organizing and tracking daily activities and projects.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
       technologies: ["React", "JavaScript", "CSS"],
-      liveUrl: "http://localhost:5173/dashboard",
+      liveUrl: "#",
       githubUrl: "https://github.com/chennakesavulanavya/TaskMaster",
       category: "Web Application"
     }
