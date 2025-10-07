@@ -57,7 +57,7 @@ const Projects = () => {
       image: githubPrManagerImage,
       technologies: ["React", "Git", "GitHub API"],
       liveUrl: "https://pr-manager-git.netlify.app/",
-      githubUrl: "https://linkedin.com/in/navya-141103nav/",
+      githubUrl: "https://github.com/chennakesavulanavya/pr-manager",
       category: "Dev Tools"
     }
   ];
