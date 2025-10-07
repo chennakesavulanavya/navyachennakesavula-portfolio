@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ExternalLink, Github, Code, Database, Palette } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
+import githubPrManagerImage from '@/assets/github-pr-manager.jpg';
 
 const Projects = () => {
   const [showDialog, setShowDialog] = useState(false);
@@ -48,6 +49,16 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "https://github.com/chennakesavulanavya/TaskMaster",
       category: "Web Application"
+    },
+    {
+      id: 5,
+      title: ["GitHub PR", "Manager"],
+      description: "A powerful tool for managing GitHub pull requests with an intuitive dashboard interface for tracking and reviewing code changes.",
+      image: githubPrManagerImage,
+      technologies: ["React", "Git", "GitHub API"],
+      liveUrl: "https://pr-manager-git.netlify.app/",
+      githubUrl: "https://linkedin.com/in/navya-141103nav/",
+      category: "Dev Tools"
     }
   ];
 

@@ -43,8 +43,8 @@ const Hero = () => {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <a 
-              href="/Navya_Chennakesavula_Resume.pdf" 
-              download="Navya_Chennakesavula_Resume.pdf"
+              href="/NAVYA_CHENNAKESAVULA_RESUME_1.pdf" 
+              download="NAVYA_CHENNAKESAVULA_RESUME_1.pdf"
               className="bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-3 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
             >
               <Download size={20} />

@@ -57,8 +57,8 @@ const Header = () => {
               </button>
             ))}
               <a 
-                href="/Navya_Chennakesavula_Resume.pdf" 
-                download="Navya_Chennakesavula_Resume.pdf"
+                href="/NAVYA_CHENNAKESAVULA_RESUME_1.pdf" 
+                download="NAVYA_CHENNAKESAVULA_RESUME_1.pdf"
               className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2"
             >
               <Download size={16} />
@@ -89,8 +89,8 @@ const Header = () => {
                 </button>
               ))}
                 <a 
-                  href="/Navya_Chennakesavula_Resume.pdf" 
-                  download="Navya_Chennakesavula_Resume.pdf"
+                  href="/NAVYA_CHENNAKESAVULA_RESUME_1.pdf" 
+                  download="NAVYA_CHENNAKESAVULA_RESUME_1.pdf"
                 className="bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 rounded-full text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-2 w-fit"
               >
                 <Download size={16} />
