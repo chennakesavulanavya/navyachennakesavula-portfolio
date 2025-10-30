@@ -51,14 +51,14 @@ const About = () => {
               </p>
               
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm currently pursuing my <span className="text-purple-400 font-semibold">B.Tech degree with an 8.02 CGPA</span>, 
-                where I've developed expertise in <span className="text-cyan-400">HTML, CSS, JavaScript, SQL, and Python</span>. 
+                I completed my <span className="text-purple-400 font-semibold">B.Tech degree with an 8.02 CGPA</span>, 
+                where I've developed expertise in <span className="text-cyan-400">HTML, CSS, JavaScript, SQL, and Java</span>. 
                 My goal is to build innovative solutions that make a positive impact.
               </p>
 
               <p className="text-lg text-gray-300 leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                or learning about the latest trends in web development.
+                or learning about the latest trends in software industries.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-4">
